@@ -1,0 +1,8 @@
+pandas
+numpy
+tqdm
+spacy
+geopy
+praw
+nltk
+requests
