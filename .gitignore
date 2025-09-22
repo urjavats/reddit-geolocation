@@ -1,0 +1,13 @@
+# Python virtual environment
+venv/
+__pycache__/
+*.pyc
+
+# macOS system files
+.DS_Store
+
+# Ignore all data by default
+data/*
+
+# Except allow the sample JSON for professor
+!data/user_activity_sample.json

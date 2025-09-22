@@ -6,3 +6,5 @@ geopy
 praw
 nltk
 requests
+zstandard 
+ndjson
