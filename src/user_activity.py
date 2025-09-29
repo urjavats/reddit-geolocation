@@ -68,7 +68,13 @@ for dump_file in dump_files:
         if author in authors_set and author not in completed_users:
             if author not in user_activity:
                 user_activity[author] = []
-            user_activity[author].append(comment)
+            filtered_comment = {
+                "author": comment.get("author"),
+                "subreddit": comment.get("subreddit"),
+                "body": comment.get("body"),
+                "created_utc": comment.get("created_utc")
+            }
+            user_activity[author].append(filtered_comment)
             if len(user_activity[author]) >= MAX_COMMENTS_PER_USER:
                 user_activity[author] = user_activity[author][:MAX_COMMENTS_PER_USER]
                 completed_users.add(author)
