@@ -10,4 +10,4 @@ __pycache__/
 data/*
 
 # Except allow the sample JSON for professor
-!data/user_activity_sample.json
+!data/final_input_preview.json
